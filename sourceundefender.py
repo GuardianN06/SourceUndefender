@@ -67,7 +67,7 @@ class Unprotect:
             -> State (default) (HEX): {self.state.hex().upper()}
             -----------------------------------------------------------------
             """)
-            with open(self.out_file + ".py", "w+") as writer:
+            with open(self.out_file + ".py", "w+", encoding='utf-8') as writer:
                 writer.write(data)
                 writer.close()
             print(f"[ + ] Source code written to {self.out_file + '.py'}")
