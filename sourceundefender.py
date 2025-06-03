@@ -128,6 +128,15 @@ def derive_aes_key(file_path):
 if __name__ == "__main__":
     try:
         clear_console()
+        if len(sys.argv) > 1:
+            file_path = sys.argv[1]
+            if not os.path.exists(file_path):
+                print(f"       {random_color()}File does not exist: {file_path}")
+                sys.exit(1)
+            key_hex = derive_aes_key(file_path)
+            unprotect_sourcedefender_file(file_path, key_hex)
+            sys.exit(0)
+            
         while True:
             print(f'''
             {random_color()}╔══════════════════════════════════════════════════════════════════════════════════╗
