@@ -3,7 +3,7 @@ Python script to decrypt sourcedefender files.
 
 Works on latest version 15.0.12 and some older versions.
 
-
+Star if you like it :p
 
 # 🧷 Usage
 ```
