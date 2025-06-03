@@ -55,7 +55,7 @@ class Unprotect:
         plaintext = ctr256_decrypt(self.ciphertext, self.key, self.iv, self.state)
 
         msg = msgpack.unpackb(plaintext)
-        data = msg.get(b'original_code') or msg.get('original_code') # STRING IF IT WAS OBFUCATED WITH FREE VERSION OF SOURCEDEFENDER CODE OBJECT IF PAID
+        data = msg.get(b'original_code') or msg.get('original_code') or msg.get('code') or msg.get(b'code') # STRING IF IT WAS OBFUCATED WITH FREE VERSION OF SOURCEDEFENDER CODE OBJECT IF PAID
         if isinstance(data, str):
             # FREE VERSION OF SOURCEDEFENDER
             print(f"""
