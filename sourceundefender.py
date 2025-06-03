@@ -32,9 +32,9 @@ class Unprotect:
 
     def verify_and_unmarshal(self, code_object_data: any):
         # Optional: verify it's a code object
-        code_obj = marshal.loads(code_object_data)
+        # code_obj = marshal.loads(code_object_data)
         
-        print(f"[ + ] Successfully loaded code object: {code_obj}")
+        # print(f"[ + ] Successfully loaded code object: {code_obj}")
         
         magic = MAGIC_NUMBER  
         flags = b'\x00\x00\x00\x00'
@@ -46,7 +46,7 @@ class Unprotect:
         with open(self.out_file + ".pyc", "wb+") as f:
             f.write(header + code_object_data)
             
-        print(f"[ + ] Exported pyc {self.out_file + '.pyc'}: {code_obj}")
+        print(f"[ + ] Exported pyc {self.out_file + '.pyc'}")
 
         
 
