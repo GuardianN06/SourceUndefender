@@ -3,7 +3,7 @@ Python script to decrypt sourcedefender files.
 
 If you wish to use the online version go to [https://sourcedefender.onrender.com](https://sourcedefender.onrender.com)
 
-Works on latest version 15.0.13 and some older versions.
+Works on latest version 15.0.14 and some older versions.
 
 Star if you like it :p
 
