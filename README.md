@@ -12,7 +12,7 @@ For other decryption services join us on our [Discord](https://discord.gg/N9CEjF
 # Features
 ### Automatic key derivation and decryption
 ### Python bytecode header rebuilder
-### Custom password and salt
+### Custom password and salt handling
 
 # Usage
 ```
